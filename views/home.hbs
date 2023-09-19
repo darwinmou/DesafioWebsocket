@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    
+    <ul id="product-list">
+        
+    </ul>
+
+    <h2>Agregar Producto</h2>
+    <form id="add-product-form">
+        <label for="product-name">Nombre del Producto:</label>
+        <input type="text" id="product-name" name="product-name" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    
+
+    <script>
+        
+        const socket = io();
+
+    
+
+        
+        const addProductForm = document.getElementById('add-product-form');
+        const productNameInput = document.getElementById('product-name');
+
+        addProductForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const productName = productNameInput.value.trim();
+
+            if (productName) {
+                
+                socket.emit('addProduct', productName);
+
+                
+                productNameInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

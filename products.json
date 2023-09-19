@@ -1,0 +1,42 @@
+[
+  {
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "category": "zapatillas",
+    "price": 200,
+    "code": "abc125",
+    "stock": 25,
+    "status": true,
+    "id": 3
+  },
+  {
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "category": "zapatillas",
+    "price": 200,
+    "code": "abc126",
+    "stock": 25,
+    "status": false,
+    "id": 4
+  },
+  {
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "category": "zapatillas",
+    "price": 200,
+    "code": "abc127",
+    "stock": 25,
+    "status": false,
+    "id": 3
+  },
+  {
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "category": "zapatillas",
+    "price": 200,
+    "code": "abc137",
+    "stock": 25,
+    "status": false,
+    "id": 4
+  }
+]
